@@ -1,0 +1,57 @@
+h1 {
+    text-align: center;
+    margin: 40px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* За замовчуванням 5 елементів у рядку */
+    gap: 20px; /* Відступи між елементами */
+    max-width: 1000px; /* Фіксуємо ширину для 5 елементів */
+    padding: 20px; /* Додаємо паддінг, щоб елементи не чіплялися до країв */
+    margin: 0 auto; /* Центруємо */
+}
+
+.product {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 15%;
+}
+
+/* Блок підпису */
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+    width: 100%;
+}
+
+.footer-line {
+    width: 100%;
+    max-width: 1040px; /* Відповідає ширині контейнера + padding */
+    height: 2px;
+    background-color: black;
+}
+
+.footer-text {
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* При ширині <= 800px: 4 елементи у рядку */
+@media (max-width: 800px) {
+    .container {
+        grid-template-columns: repeat(4, 1fr);
+        max-width: 840px;
+    }
+
+    .footer-line {
+        max-width: 840px;
+    }
+}

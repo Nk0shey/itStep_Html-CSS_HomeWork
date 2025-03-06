@@ -1,0 +1,24 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e4e4e4;
+    margin: 30px;
+}
+
+h2 {
+    margin-top: 40px;
+}
+
+.tag_pronounce {
+    margin-bottom: 20px;
+}
+
+ol li,
+ol p {
+    margin-top: 4px;
+    margin-left: 20px;
+}
+
+p {
+    margin: 0 0 0 10px;
+}
+

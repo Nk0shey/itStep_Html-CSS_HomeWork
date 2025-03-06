@@ -1,0 +1,55 @@
+body {
+    background-color: lightgray;
+    font-family: Arial, sans-serif;
+}
+
+.body-text {
+    text-transform: uppercase;
+    margin-left: 60px;
+    padding: 20px;
+}
+
+.sidebar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 60px;
+    height: 100vh;
+    background: #333;
+    overflow: hidden;
+    transition: width 0.3s;
+    display: flex;
+    flex-direction: column;
+   
+}
+
+.menu-item {
+    display: flex;
+    align-items: center;
+    padding: 9px;
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+    gap: 10px;
+}
+
+.menu-item img {
+    width: 42px;
+    height: 42px;
+}
+
+.sidebar:hover {
+    width: 200px;
+}
+
+/* Изменение фона при наведении на пункт */
+
+
+.sidebar:hover .menu-item span {
+    opacity: 1; /* Показываем текст при наведении */
+}
+
+.menu-item:hover {
+    background: #444;
+}
+

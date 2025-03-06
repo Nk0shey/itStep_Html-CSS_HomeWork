@@ -1,0 +1,43 @@
+
+     /* Стилі для всього списку */
+ ol {
+     list-style-type: none; /* Видаляємо стандартну нумерацію */
+     padding: 20px; /* Відступи всередині списку */
+     margin: 20px; /* Зовнішні відступи */
+     background-color: #ec9cac; /* Світлий фон для списку */
+     counter-reset: my-counter; /* Ініціалізуємо лічильник */
+ }
+
+/* Стилі для елементів списку */
+li {
+    color: white;
+    padding: 0px; /* Відступи всередині елементів списку */
+    margin: 5px 0; /* Зовнішні відступи між елементами */
+    background-color: #c46475; /* Темніший фон для елементів списку */
+    position: relative; /* Потрібно для позиціонування номера */
+    padding-left: 40px; /* Відступ для номера */
+}
+
+/* Додаємо нумерацію вручну */
+li::before {
+    content: counter(my-counter) ".";
+    counter-increment: my-counter; /* Збільшуємо лічильник */
+    position: absolute; /* Абсолютне позиціонування */
+    left: 10px; /* Відступ зліва */
+    top: 50%; /* Вертикальне центрування */
+    transform: translateY(-50%); /* Центрування по вертикалі */
+    padding: 5px 5px; /* Відступи для номера */
+    font-weight: bold; /* Жирний шрифт */
+}
+
+/* Стилі для тексту в елементах списку */
+li span {
+    display: inline-block; /* Робимо span блоковим елементом */
+    padding: 10px 20px;
+    height: 100%;
+    background-color: #9c354c; /* Найтемніший фон під текстом */
+}
+
+h1 {
+    text-align: center;
+}

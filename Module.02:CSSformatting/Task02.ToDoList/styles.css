@@ -1,0 +1,65 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    padding: 20px;
+}
+
+h2 {
+    font-weight: bold;
+    text-align: center;
+}
+
+ul.tasks {
+    list-style: none;
+    padding: 0;
+    width: 300px;
+    margin: 0 auto;
+}
+
+ul.tasks li {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid #ddd;
+    margin-bottom: 5px;
+    background-color: #add8e6;
+    gap: 10px; /* Расстояние между элементами внутри li */
+}
+
+ul.tasks li:nth-child(even) {
+    background-color: #87cefa;
+}
+
+ul.tasks li.completed {
+    background-color: #d3d3d3;
+}
+
+ul.tasks li.completed .task-text {
+    text-decoration: line-through;
+    color: gray;
+}
+
+/* Чекбокс */
+.checkbox {
+    width: 16px;
+    height: 16px;
+    flex-shrink: 0;
+}
+
+/* Текст задачи */
+.task-text {
+    flex-grow: 1;
+    text-align: left;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* Крестик */
+.cross {
+    color: red;
+    font-size: 18px;
+    cursor: pointer;
+    text-decoration: none !important;
+    flex-shrink: 0;
+}

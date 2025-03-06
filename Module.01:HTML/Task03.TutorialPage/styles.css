@@ -1,0 +1,32 @@
+.dotted-underline {
+    text-decoration: underline dotted;
+}
+
+.highlight-zone {
+    background-color: lightgrey;
+    color: darkred;
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    overflow-x: auto;
+}
+
+.highlight-word {
+    background-color: lightgrey;
+    color: darkgreen;
+    margin-right: 6px;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+.highlight-word-red {
+    background-color: lightgray;
+    color: darkred;
+}
+
+.body {
+    background-color: #e4e4e4;
+}
+

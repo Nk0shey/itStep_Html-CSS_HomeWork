@@ -1,0 +1,44 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.table-container {
+    width: max-content;
+    min-width: 100%;
+    margin-top: 50px; 
+}
+
+table {
+    width: 100%;
+    min-width: 600px;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 12px;
+    text-align: center;
+}
+
+thead tr {
+    position: sticky;
+    top: 0;
+    background: white;
+    z-index: 1000;
+}
+
+td:first-child, th:first-child {
+    position: sticky;
+    left: 0;
+    background: #59bced;
+    color: black;
+    z-index: 1001;
+}
+
+th {
+    background: #59bced;
+    color: black;
+}
+
+tr:nth-child(even) {
+    background-color: lightgray;
+}

@@ -1,0 +1,50 @@
+header, nav, aside, main, section, footer {
+    border: 1px solid black; /* Для наглядности */
+    padding: 10px;
+    margin: 3px;
+    color: #ffffff;
+}
+
+header, aside, main {
+    background-color: rgb(139, 0, 39);
+}
+
+section {
+    background-color: rgb(219, 2, 63);
+}
+
+nav {
+    background-color: rgb(92, 0, 26);
+    clear: both; /* Чтобы меню начиналось с новой строки */
+}
+
+.left-aside-container {
+    width: 30%;
+    float: left;
+}
+
+.left-aside-container aside {
+    margin: 3px 10px 10px 3px;
+}
+
+aside.right-aside {
+    float: left;
+    width: 10%;
+    height: 100%; /* Растягиваем на всю высоту */
+    margin-left: 21px;
+}
+
+main {
+    width: 55%; /* Примерная ширина */
+    float: left;
+}
+
+.aside:last-child {
+    float: right;
+}
+
+footer {
+    background-color: darkred;
+    clear: both; /* Чтобы футер начинался с новой строки */
+}
+
