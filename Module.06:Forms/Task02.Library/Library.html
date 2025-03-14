@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h2>Inputs</h2>
+    <div class="input-container">
+        <input type="text" class="input-normal" placeholder="Enter some text">
+    </div>
+    <div class="input-container">
+        <input type="text" class="input-valid" placeholder="valid text">
+        <img src="valid.png" class="input-icon">
+    </div>
+    <div class="input-container">
+        <input type="text" class="input-invalid" placeholder="invalid text">
+        <img src="invalid.png" class="input-icon">
+    </div>
+    
+    <h2>Check boxes</h2>
+    <div class="checkbox-containers" style="display: flex;margin-left: -10px;">
+        <label class="checkbox-container">
+            <input type="checkbox" checked>
+            <span class="checkmark"></span>
+            Subscribe
+        </label>
+        <label class="checkbox-container-invalid">
+            <input type="checkbox">
+            <span class="checkmark"></span>
+            Subscribe
+        </label>
+    </div>
+    
+    <h2>Radio buttons</h2>
+    <div class="radio-container">Gender:   
+        <label class="radio-item">
+            <input type="radio" name="gender" checked>
+            <span class="radiomark"></span>
+            Male
+        </label>
+        <label class="radio-item">
+            <input type="radio" name="gender">
+            <span class="radiomark invalid"></span>
+            Female
+        </label>
+    </div>
+    
+
+    <h2>Buttons</h2>
+    <button class="btn-active">Active</button>
+    <button class="btn-hover">Hover</button>
+    <button class="btn-danger">Danger</button>
+    <button class="btn-hover-dark">Hover</button>
+    <button class="btn-disabled" disabled>Disabled</button>
+    <button class="btn-circle plus">+</button>
+    <button class="btn-circle minus">-</button>
+    
+    <h2>Text area</h2>
+    <textarea class="textarea" placeholder="Enter some text..."></textarea>
+</body>
+</html>

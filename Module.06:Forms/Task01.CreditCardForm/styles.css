@@ -1,0 +1,81 @@
+body {
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-size: 10px;
+    font-style: normal;  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    color: #5f8b8c;
+}
+
+.card-container {
+    position: relative; 
+    width: 460px;
+}
+
+.card-form {
+    background: #9ecdcd;
+    padding: 80px 20px 20px 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden; 
+}
+
+.card-form label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+.card-form input {
+    width: 55%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border-top: hidden;
+    border-right: hidden;
+    border-left: hidden;
+    background-color: #aad2d2;
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-size: 14px;
+    color: #5f8b8c;
+}
+
+.headline {
+    background-color: #db6322;
+    color: white;
+    width: 80%;
+    text-transform: uppercase;
+    padding: 10px 10px 10px 40px;
+    font-size: 16px;
+    font-weight: 500;
+    position: absolute; 
+    top: 30px; 
+    left: -20px;
+    z-index: 1; 
+}
+
+input#expiry-month, input#expiry-year, input#cvv {   
+    width: 13.2%;
+    margin-right: 14px;
+}
+
+.label-group {
+    display: flex;
+    justify-content: space-between;
+    width: 54%;
+}
+
+.moon-flag {
+    position: absolute;
+    bottom: -50px;
+    right: -75px;
+    width: 250px;
+    height: auto;
+    opacity: 0.8;
+}

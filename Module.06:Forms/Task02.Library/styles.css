@@ -1,0 +1,220 @@
+.input-container {
+    position: relative;
+    display: inline-block;
+}
+.input-icon {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 5%;
+}
+.input-normal {
+    border: 1px solid #ccc;
+    padding: 10px;
+    width: 200px;
+    border-radius: 5px;
+}
+.input-valid::placeholder {
+    color: green;
+}
+.input-valid {
+    border: 1px solid green;
+    color: green;
+    padding: 10px;
+    width: 200px;
+    padding-right: 30px;
+    border-radius: 5px;
+}
+.input-invalid::placeholder {
+    color: lightcoral;
+}
+.input-invalid {
+    border: 1px solid red;
+    color: lightcoral;
+    padding: 10px;
+    width: 200px;
+    padding-right: 30px;
+    border-radius: 5px;
+}
+/* Общий стиль контейнера чекбокса */
+.checkbox-container, .checkbox-container-invalid {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    position: relative;
+    cursor: default; /* Убираем возможность клика */
+}
+
+/* Скрываем оригинальный чекбокс */
+.checkbox-container input, .checkbox-container-invalid input {
+    display: none;
+}
+
+/* Общий стиль кастомного чекбокса */
+.checkmark {
+    width: 34px;
+    height: 20px;
+    border-radius: 10px;
+    position: relative;
+    margin-right: 5px;
+    margin-left: 10px;
+    pointer-events: none; /* Полностью блокируем взаимодействие */
+}
+
+/* Зеленый чекбокс (активный) */
+.checkbox-container .checkmark {
+    background: green;
+}
+
+/* Красный чекбокс (невалидный) */
+.checkbox-container-invalid .checkmark {
+    background: red;
+}
+
+/* Стиль переключателя (ползунка) внутри чекбокса */
+.checkmark::after {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    background: white;
+    border-radius: 50%;
+    top: 2px;
+    transition: all 0.3s ease;
+}
+
+/* Расположение переключателя внутри активного чекбокса */
+.checkbox-container .checkmark::after {
+    left: 2px; /* Фиксируем кнопку слева */
+}
+
+/* Расположение переключателя внутри невалидного чекбокса */
+.checkbox-container-invalid .checkmark::after {
+    right: 2px; /* Фиксируем кнопку справа */
+    left: auto;
+}
+
+.radio-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.radio-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    position: relative; /* Контейнер для правильного расположения */
+}
+
+.radio-item input {
+    position: absolute; /* Позиционирование радиокнопки */
+    opacity: 0; /* Скрытие стандартной кнопки */
+}
+
+.radiomark {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    border: 2px solid green;
+    position: relative;
+    margin-right: 6px;
+    margin-left: 5px;
+    transition: all 0.3s ease; /* Плавная анимация */
+}
+
+.radiomark::after {
+    content: "";
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    background: green;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+    transition: all 0.3s ease; /* Плавное появление */
+}
+
+.radio-item input:checked + .radiomark::after {
+    display: block;
+}
+
+.radiomark.invalid {
+    border: 2px solid red;
+}
+
+.radiomark.invalid::after {
+    background: red;
+}
+
+.btn-active {
+    background: green;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 9px;
+    margin-right: 6px;
+}
+.btn-hover {
+    background: darkgreen;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 9px;
+    margin-right: 6px;
+}
+.btn-danger {
+    background: red;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 9px;
+    margin-right: 6px;
+}
+.btn-hover-dark {
+    background: darkred;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 9px;
+    margin-right: 6px;
+}
+.btn-disabled {
+    background: grey;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 9px;
+    cursor: not-allowed;
+    margin-right: 6px;
+}
+.btn-circle {
+    width: 35.5px;
+    height: 35.5px;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    cursor: pointer;
+    margin-right: 6px;
+}
+.plus {
+    background: green;
+    color: white;
+}
+.minus {
+    background: red;
+    color: white;
+}
+.textarea {
+    width: 100%;
+    height: 100px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    width: 40%;
+    border-radius: 5px;
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Outfit:wght@100..900&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="card-container">
+        <div class="headline">Credit Card Details</div>
+        <form class="card-form">
+            <label for="card-number">Card Number</label>
+            <input type="text" id="card-number" name="card-number" placeholder="1234 5678 9012 3456" required>
+            
+            <label for="card-holder">Name On Card</label>
+            <input type="text" id="card-holder" name="card-holder" placeholder="Name Surname" required>
+            
+            <div class="flex">
+                <div class="label-group">
+                    <label for="expiry-date">Expiry Date</label>
+                    <label for="cvv">CVV / CVN</label>
+                </div>
+                <div class="input-group">
+                    <input type="text" id="expiry-month" placeholder="02" required>
+                    <input type="text" id="expiry-year" placeholder="2025" required>
+                    <input type="password" id="cvv" name="cvv" placeholder="***" required>
+                </div>
+            </div>
+            <img src="moon_flag.png" alt="Moon Flag" class="moon-flag">
+        </form>
+    </div>
+</body>
+</html>
